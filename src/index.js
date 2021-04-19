@@ -4,11 +4,13 @@ Promise.resolve().then(res => res)
 
 const wk = new WeakMap();
 
-() => {
+const a = {}
+
+const c = () => {
   console.log(a);
 }
 
-a?.b
+console.log(a?.b)
 
 const isHas = [1,2,3].includes(2);
 
@@ -25,4 +27,4 @@ class Point {
     return this.x;
   }
 }
-let cp = new ColorPoint(25, 8);
+let cp = new Point(25, 8);
