@@ -1,5 +1,8 @@
+`npm i && ./node_modules/.bin/babel src --out-dir lib`
 #### 1. `@babel/preset-env` 
-提供了一系列插件预设（否则我们要一个语法插件一个语法插件得配），负责 ES6+ 的语法转换为 ES5
+提供了一系列插件预设（否则我们要一个语法插件一个语法插件得配），负责 ES6+ 的语法转换为 ES5 
+> stage-3 以下的语法不包含的预设，要使用额外装插件
+> 查提案到这个仓库: [传送门](https://github.com/tc39/proposals)
 
 #### 2. `core-js` 
 是结合预设 `@babel/preset-env` 用的，安好库后，如下配置后，可以按需加载垫片（polyfill）

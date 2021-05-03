@@ -1,3 +1,9 @@
+const obj = {
+  type: 1
+};
+
+obj.aaa ?? 1;
+
 [].flat(3);
 
 Promise.resolve().then((res) => res);
